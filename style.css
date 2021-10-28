@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    user-select: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+input,button:focus {
+    outline: none!important
+}
+.d-flex {
+    display: flex;
+}
+.img-inst{
+    max-width: 300px;
+    max-height: 300px;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.edge-first {
+    height: 250px;
+    width: 15px;
+    background-color: #007a6a;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 2;
+    animation: color-first 1s linear infinite alternate-reverse running 3s forwards;
+}
+.edge-third {
+    height: 250px;
+    width: 15px;
+    background-color: #008f7d;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 2;
+    animation: color-third 1s linear infinite alternate-reverse running 3s forwards;
+}
+.edge-second {
+    background-color: #04a294;
+    border: 1px solid #28c9ba;
+    height: 250px;
+    width: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 2;
+    animation: color-second 1s linear infinite alternate-reverse running 3s forwards;
+}
+@keyframes color-first {
+    0% {
+        background-color: #007a6a;
+    }
+    50% {
+        background-color: #04a294;
+    }
+    100% {
+        background-color: #007a6a;
+    }
+}
+@keyframes color-second {
+    0% {
+        background-color: #04a294;
+    }
+    50% {
+        background-color: #008f7d;
+    }
+    100% {
+        background-color: #04a294;
+    }
+}
+@keyframes color-third {
+    0% {
+        background-color: #008f7d;
+    }
+    50% {
+        background-color: #04a294;
+    }
+    100% {
+        background-color: #008f7d;
+    }
+}
+.border {
+    border: 23.9px solid transparent;
+    border-bottom: 70px solid #967252;
+    position: relative;
+    z-index: 1;
+    
+    top: 5px;
+}
+.border-two {
+    border: 10px solid transparent;
+    border-bottom: 29px solid #282320;
+    position: relative;
+    z-index: 2;
+    top: 60px;
+
+}
